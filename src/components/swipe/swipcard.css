@@ -1,0 +1,59 @@
+#swipeCard {
+  margin: 4rem;
+}
+
+.container.swipeCard__container {
+  width: 80%;
+  /* height: 20rem; */
+  padding-bottom: 3rem;
+}
+
+.swipeCard {
+  background: var(--color-bg-variant);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.business__icon {
+  width: 100%;
+  font-size: 5rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 2%;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid var(--color-primary-variant);
+}
+
+.business__review {
+  color: var(--color-light);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+
+/* Media Queries(md) */
+@media screen and (max-width: 1024px) {
+  .container.swipeCard__container {
+    width: 60%;
+  }
+}
+
+/* Media Queries(sm) */
+@media screen and (max-width: 600px) {
+  .container.swipeCard__container {
+    width: var(--container-width-sm);
+  }
+
+  .client__review {
+    width: var(--container-width-sm);
+  }
+}
